@@ -45,7 +45,7 @@ const resolvers = {
       return todo
     },
     toggleCompleted: (root, args) => {
-      const todo = todos.find(t => t.id === args.id)
+      const todo = todos.find(todo => todo.id === args.id)
       if (!todo) {
         throw new UserInputError('id not found', {
           invalidArgs: args.id,
