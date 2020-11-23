@@ -14,7 +14,7 @@ export const ALL_TODOS = gql`
   }
 `
 const ADD_TODOS = gql`
-  mutation addTodo($text: String!) {
+  mutation addTodo($text: String) {
     addTodo(text: $text) {
       id
       text
@@ -23,7 +23,7 @@ const ADD_TODOS = gql`
   }
 `
 const SET_FILTER = gql`
-  mutation setFilter($filter: FILTER!) {
+  mutation setFilter($filter: FILTER) {
     setFilter(filter: $filter)
   }
 `

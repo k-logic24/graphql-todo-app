@@ -13,19 +13,19 @@ const typeDefs = gql`
   }
   
   type Todo {
-    id: ID!
-    text: String!
-    completed: Boolean!
+    id: ID
+    text: String
+    completed: Boolean
   }
   
   type Query {
-    allTodos: [Todo!]!
+    allTodos: [Todo]
   }
   
   type Mutation {
-    addTodo(text: String!): Todo!
-    toggleCompleted(id: ID!): Todo!
-    setFilter(filter: FILTER!): FILTER!
+    addTodo(text: String): Todo
+    toggleCompleted(id: ID): Todo
+    setFilter(filter: FILTER): FILTER
   }
 `
 
