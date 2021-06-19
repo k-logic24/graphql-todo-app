@@ -1,5 +1,7 @@
 # Todo-App with GraphQL and React
-## server
+
+## backend
 `yarn server`
-## front
+
+## frontend
 `yarn start`
